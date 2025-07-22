@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Submit Assignment</h1>
+    </header>
+    <main>
+        <form action="/submit-assignment" method="POST" enctype="multipart/form-data">
+            <label for="assignment-title">Assignment Title:</label>
+            <input type="text" id="assignment-title" name="assignment-title" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            
+            <label for="file-upload">Upload File:</label>
+            <input type="file" id="file-upload" name="file-upload" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Edtech Tracker</p>
+    </footer>
+</body>
+</html>
